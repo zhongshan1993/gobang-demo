@@ -3,14 +3,13 @@ var context = chess.getContext('2d');
 
 context.strokeStyle = '#bfbfbf';
 
-var logo = new Image();
-logo.src = "images/logo.png";
-logo.onload = function() {
-  context.drawImage(logo, 0, 0, 450, 450);
+// var logo = new Image();
+// logo.src = "images/logo.png";
+// logo.onload = function() {
+  // context.drawImage(logo, 0, 0, 450, 450);
   drawChessBoard();
-}
-
-var drawChessBoard = function() {
+// }
+function drawChessBoard() {
   for (var i=0; i<15; i++) {
     context.moveTo(15+i*30, 15);
     context.lineTo(15+i*30, 435);
